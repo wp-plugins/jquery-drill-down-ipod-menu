@@ -96,7 +96,7 @@
 				var itemHeight = $('li',$dcDrilldownObj).outerHeight(true);
 
 				// Get height of largest sub menu
-				var objUl = $('ul',$dcDrilldownObj);
+				var objUl = $('ul',$dcWrapper);
 				var maxItems = findMaxHeight(objUl);
 
 				// Get level of largest sub menu
