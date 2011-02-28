@@ -13,6 +13,6 @@
 #dc_jqdrilldown_widget-%ID%-item .dd-header li {display: inline;}
 #dc_jqdrilldown_widget-%ID%-item .dd-header li a {text-decoration: none; float: left; display: block; padding: 1px 15px 1px 5px; background: url(skins/images/arrow_red_right.png) no-repeat 100% center; color: #222;}
 #dc_jqdrilldown_widget-%ID%-item .dd-header li a:hover {color: #990000; text-decoration: underline;}
-#dc_jqdrilldown_widget-%ID%-item .dd-header a.link-back {text-decoration: none; float: left; display: block; padding: 1px 5px 1px 15px; background: url(skins/images/arrow_red_left.png) no-repeat 0 center; color: #222;}
+#dc_jqdrilldown_widget-%ID%-item .dd-header a.link-back {text-decoration: none; display: block; padding: 5px 10px 0 20px; background: url(skins/images/arrow_red_left.png) no-repeat 0 center; color: #222;}
 #dc_jqdrilldown_widget-%ID%-item .dd-header h3 {clear: both; padding: 5px 10px; margin: 0; font-size: 13px;}
 #dc_jqdrilldown_widget-%ID%-item .dd-header h3 .dd-count {display: none;}
