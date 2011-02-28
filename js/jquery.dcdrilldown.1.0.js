@@ -17,6 +17,7 @@
 		//set default options
 		var defaults = {
 			classWrapper	: 'dd-wrapper',
+			classMenu		: 'dd-menu',
 			classParent		: 'dd-parent',
 			classParentLink	: 'dd-parent-a',
 			classActive		: 'active',
@@ -42,6 +43,7 @@
 		return this.each(function(options){
 
 			var $dcDrilldownObj = this;
+			$($dcDrilldownObj).addClass(defaults.classMenu);
 			var $wrapper = '<div class="'+defaults.classWrapper+'" />';
 			$($dcDrilldownObj).wrap($wrapper);
 			var $dcWrapper = $($dcDrilldownObj).parent();
@@ -88,10 +90,6 @@
 				$arrow = '<span class="'+defaults.classIcon+'"></span>';
 				$($dcDrilldownObj).before($header);
 
-			//	if(defaults.includeHdr == false){
-			//		$('#'+idHeader+' '+defaults.headerTag).hide();
-			//	}
-
 				// Get width of menu container & height of list item
 				var totalWidth = $($dcDrilldownObj).outerWidth(true);
 				totalWidth += 'px';
@@ -106,7 +104,11 @@
 				var getIndex = findMaxIndex(maxUl);
 
 				// Set menu container height
-				menuHeight = itemHeight * (maxItems + getIndex);
+				if(defaults.linkType == 'link'){
+					menuHeight = itemHeight * (maxItems + getIndex);
+				} else {
+					menuHeight = itemHeight * maxItems;
+				}
 				$($dcDrilldownObj).css('height',menuHeight+'px');
 
 				// Set sub menu width and offset
