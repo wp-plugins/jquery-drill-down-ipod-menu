@@ -31,7 +31,7 @@ class dc_jqdrilldown {
 	}
 
 	function header(){
-		echo "\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"".dc_jqdrilldown::get_plugin_directory()."/css/dcdrilldown.css\" media=\"screen\">";
+		echo "\n\t<link rel=\"stylesheet\" type=\"text/css\" href=\"".dc_jqdrilldown::get_plugin_directory()."/css/dcdrilldown.css\" media=\"screen\" />";
 	}
 	
 	function footer(){
