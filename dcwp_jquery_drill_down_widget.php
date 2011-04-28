@@ -228,8 +228,8 @@ class dc_jqdrilldown_widget extends WP_Widget {
 		
 					$skin = $wpdcjqdrilldown['skin'];
 					$skin = htmlspecialchars(ucfirst(preg_replace('/\..*$/', '', $skin)));
-					if('no-theme'!=$skin){
-						echo "\n\t<link rel=\"stylesheet\" href=\"".dc_jqdrilldown::get_plugin_directory()."/skin.php?widget_id=".$key."&amp;skin=".strtolower($skin)."\" type=\"text/css\" media=\"screen\"  />";
+					if($skin != 'No-theme'){
+						echo "\n\t<link rel=\"stylesheet\" href=\"".dc_jqdrilldown::get_plugin_directory()."/skin.php?widget_id=".$key."&skin=".strtolower($skin)."\" type=\"text/css\" media=\"screen\"  />";
 					}
 				}
 			}

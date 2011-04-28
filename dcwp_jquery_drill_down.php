@@ -5,7 +5,7 @@
 		Tags: jquery, drill down, menu, slider, animated, css, navigation
 		Description: Creates a widget, which allows you to create a drill down ipod style menu from any Wordpress custom menu using jQuery. Drill down menus are ideal for managing large, complicated menus in a small, compact and fixed area. Features include - handles multiple levels, saved state using cookies and multiple menus on the same page.
 		Author: Lee Chestnutt
-		Version: 1.0
+		Version: 1.1
 		Author URI: http://www.designchemical.com
 */
 
