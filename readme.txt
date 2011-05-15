@@ -1,6 +1,6 @@
 === JQuery Drill Down Ipod Menu Widget ===
 Contributors: remix4
-Donate link: http://www.designchemical.com
+Donate link: http://www.designchemical.com/blog/index.php/wordpress-plugins/wordpress-plugin-jquery-drill-down-ipod-menu-widget/#form-donate
 Tags: jquery, drill down, menu, vertical, animated, css, navigation, widget
 Requires at least: 3.0
 Tested up to: 3.1
