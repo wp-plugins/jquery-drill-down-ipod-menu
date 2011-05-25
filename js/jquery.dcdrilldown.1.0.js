@@ -184,8 +184,6 @@
 
 		// Retrieve cookie value and set active items
 		function checkCookie(cookieId, obj){
-			// check cookie plugin loaded
-			if ($.fn.cookie) {
 			var cookieVal = $.cookie(cookieId);
 			if(cookieVal != null){
 				// create array from cookie string
@@ -194,7 +192,6 @@
 					var $cookieLi = $('li:eq('+value+')',obj);
 					$('> a',$cookieLi).addClass(defaults.classActive);
 				});
-			}
 			}
 		}
 
@@ -329,8 +326,6 @@
 
 		// Write cookie
 		function createCookie(cookieId, obj){
-			// check cookie plugin loaded
-			if ($.fn.cookie) {
 			var activeIndex = [];
 			// Create array of active items index value
 			$('a.'+defaults.classActive,obj).each(function(i){
@@ -340,7 +335,6 @@
 				});
 			// Store in cookie
 			$.cookie(cookieId, activeIndex, { path: '/' });
-			}
 		}
 	};
 })(jQuery);

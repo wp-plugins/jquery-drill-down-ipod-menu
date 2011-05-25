@@ -4,7 +4,7 @@ Donate link: http://www.designchemical.com/blog/index.php/wordpress-plugins/word
 Tags: jquery, drill down, menu, vertical, animated, css, navigation, widget
 Requires at least: 3.0
 Tested up to: 3.1
-Stable tag: 1.2
+Stable tag: 1.3
 
 Creates a widget, which allows you to create a drill down ipod style menu from any Wordpress custom menu using jQuery.
 
@@ -65,6 +65,9 @@ Another likely cause is due to other non-functioning plugins, which may have err
 2. Sample drill down ipod menus
 
 == Changelog ==
+
+= 1.3 =
+* Fixed: Bug with save state option
 
 = 1.2 =
 * Added: jQuery drilldown plugin includes check for cookie function
