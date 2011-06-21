@@ -91,7 +91,7 @@
 				$($dcDrilldownObj).before($header);
 
 				// Get width of menu container & height of list item
-				var totalWidth = $($dcDrilldownObj).outerWidth(true);
+				var totalWidth = $($dcDrilldownObj).outerWidth();
 				totalWidth += 'px';
 				var itemHeight = $('li',$dcDrilldownObj).outerHeight(true);
 
@@ -109,10 +109,11 @@
 				} else {
 					menuHeight = itemHeight * maxItems;
 				}
-				$($dcDrilldownObj).css('height',menuHeight+'px');
+				$($dcDrilldownObj).css({height: menuHeight+'px', width: totalWidth});
 
 				// Set sub menu width and offset
 				$('li',$dcDrilldownObj).each(function(){
+					$(this).css({width: totalWidth});
 					$('ul',this).css({width: totalWidth, marginRight: '-'+totalWidth, marginTop: '0'});
 					if($('> ul',this).length){
 						$(this).addClass(defaults.classParent);
